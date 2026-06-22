@@ -654,3 +654,15 @@ transform:translateY(110vh) rotate(360deg);
 }
 
 }
+#musicToggle{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#65061d;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:10px;
+cursor:pointer;
+z-index:9999;
+}
