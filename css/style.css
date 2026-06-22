@@ -689,3 +689,9 @@ url('../assets/hampi-bg.jpg');
 background-size:cover;
 background-position:center;
 }
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+}
