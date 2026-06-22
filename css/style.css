@@ -82,9 +82,9 @@ color:#d4af37;
 ================================== */
 
 .hero{
-padding-top:80px;
 min-height:100vh;
-background:#160c08;
+width:100%;
+overflow:hidden;
 position:relative;
 }
 
@@ -98,10 +98,13 @@ background:rgba(0,0,0,.35);
 }
 
 .hero-container{
+width:100%;
+max-width:1400px;
+margin:auto;
 display:flex;
 justify-content:center;
 align-items:center;
-min-height:100vh;
+padding:120px 40px 80px;
 }
 
 .hero-left{
@@ -139,13 +142,9 @@ margin-bottom:25px;
 }
 
 .hero-right h1{
-font-size:110px;
-letter-spacing:4px;
+font-size:90px;
 line-height:1;
-color:#d4af37;
-text-shadow:
-0 0 10px rgba(212,175,55,.5),
-0 0 20px rgba(212,175,55,.4);
+letter-spacing:3px;
 }
 
 .hero-right h1{
@@ -598,9 +597,37 @@ font-size:42px;
 
 .countdown-grid{
 display:flex;
-gap:15px;
 justify-content:center;
-flex-wrap:wrap;
+align-items:center;
+gap:20px;
+flex-wrap:nowrap;
+}
+
+.count-box{
+width:160px;
+height:140px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:15px;
+background:#7a001f;
+border:2px solid #b8891b;
+border-radius:12px;
+}
+
+.count-box span{
+font-size:42px;
+font-weight:bold;
+color:#d4af37;
+line-height:1;
+}
+
+.count-box p{
+font-size:22px;
+color:white;
+margin-top:12px;
+text-transform:uppercase;
 }
 
 .count-box{
@@ -704,4 +731,20 @@ background:none;
 width:auto;
 height:auto;
 font-size:18px;
+}
+@media(max-width:768px){
+
+.countdown-grid{
+flex-wrap:wrap;
+}
+
+.count-box{
+width:130px;
+height:120px;
+}
+
+.hero-right h1{
+font-size:55px;
+}
+
 }
