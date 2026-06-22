@@ -183,7 +183,10 @@ letter-spacing:5px;
 
 .countdown-box{
 margin-top:35px;
-padding:25px 40px;
+padding:20px;
+max-width:850px;
+width:90%;
+margin-top:30px;
 background:#65061d;
 border:2px solid #d4af37;
 border-radius:12px;
