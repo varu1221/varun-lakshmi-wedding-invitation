@@ -82,10 +82,8 @@ color:#d4af37;
 ================================== */
 
 .hero{
-min-height:100vh;
 width:100%;
-overflow:hidden;
-position:relative;
+min-height:100vh;
 
 background:
 linear-gradient(
@@ -95,8 +93,35 @@ rgba(0,0,0,.45)
 url('../assets/hampi-bg.jpg');
 
 background-size:cover;
-background-position:center center;
+background-position:center;
 background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+overflow:hidden;
+}
+
+.hero-container{
+width:100%;
+padding:120px 20px 80px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero-right{
+width:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+padding:0 20px;
+
+background:none !important;
 }
 
 .overlay{
