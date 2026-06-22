@@ -144,6 +144,12 @@ color:#d4af37;
 line-height:1;
 }
 
+.hero-right h1{
+text-shadow:
+0 0 15px rgba(212,175,55,.5),
+0 0 30px rgba(212,175,55,.3);
+}
+
 .ampersand{
 font-size:65px;
 color:white;
@@ -162,6 +168,10 @@ font-size:60px;
 color:#d4af37;
 margin-top:20px;
 font-weight:400;
+}
+
+.forever{
+text-shadow:0 0 20px rgba(212,175,55,.5);
 }
 
 .date{
