@@ -695,3 +695,9 @@ display:flex;
 align-items:center;
 justify-content:center;
 }
+.petal{
+background:none;
+width:auto;
+height:auto;
+font-size:18px;
+}
