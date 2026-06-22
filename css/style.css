@@ -665,3 +665,14 @@ border-radius:10px;
 cursor:pointer;
 z-index:9999;
 }
+.hampi-bg{
+background:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
+),
+url('../assets/hampi-bg.jpg');
+
+background-size:cover;
+background-position:center;
+}
