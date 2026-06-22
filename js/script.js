@@ -147,6 +147,7 @@ function createPetal() {
 const petal =
 document.createElement("div");
 
+petal.innerHTML = "🌸";
 petal.classList.add("petal");
 
 petal.style.left =
