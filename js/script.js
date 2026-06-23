@@ -74,7 +74,7 @@ document.querySelectorAll(".gallery-grid img");
 
 if (galleryImages.length > 0) {
 
-```
+
 const lightbox =
 document.createElement("div");
 
@@ -100,7 +100,7 @@ lightbox.addEventListener("click", () => {
     lightbox.classList.remove("active");
 
 });
-```
+
 
 }
 
