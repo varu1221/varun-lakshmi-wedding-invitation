@@ -6,7 +6,7 @@ const weddingDate = new Date("July 05, 2026 08:00:00").getTime();
 
 function updateCountdown() {
 
-```
+
 const now = new Date().getTime();
 const distance = weddingDate - now;
 
@@ -27,7 +27,7 @@ document.getElementById("days").textContent = String(days).padStart(2, "0");
 document.getElementById("hours").textContent = String(hours).padStart(2, "0");
 document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
 document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
-```
+
 
 }
 
@@ -40,7 +40,7 @@ setInterval(updateCountdown, 1000);
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-```
+
 anchor.addEventListener("click", function (e) {
 
     e.preventDefault();
@@ -54,7 +54,7 @@ anchor.addEventListener("click", function (e) {
     }
 
 });
-```
+
 
 });
 
@@ -71,7 +71,7 @@ document.body.appendChild(lightbox);
 
 galleryImages.forEach(image => {
 
-```
+
 image.addEventListener("click", () => {
 
     lightbox.classList.add("active");
@@ -83,7 +83,7 @@ image.addEventListener("click", () => {
     lightbox.appendChild(img);
 
 });
-```
+
 
 });
 
@@ -97,7 +97,7 @@ lightbox.classList.remove("active");
 
 function createPetal() {
 
-```
+
 const petal = document.createElement("div");
 
 petal.classList.add("petal");
@@ -112,7 +112,7 @@ document.body.appendChild(petal);
 setTimeout(() => {
     petal.remove();
 }, 10000);
-```
+
 
 }
 
@@ -124,7 +124,7 @@ setInterval(createPetal, 1200);
 
 window.addEventListener("scroll", () => {
 
-```
+
 const navbar = document.querySelector(".navbar");
 
 if (!navbar) return;
@@ -133,7 +133,7 @@ navbar.style.height =
     window.scrollY > 50
         ? "75px"
         : "90px";
-```
+
 
 });
 
@@ -145,7 +145,7 @@ const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver(
 
-```
+
 entries => {
 
     entries.forEach(entry => {
@@ -164,19 +164,19 @@ entries => {
 {
     threshold: 0.15
 }
-```
+
 
 );
 
 sections.forEach(section => {
 
-```
+
 section.style.opacity = "0";
 section.style.transform = "translateY(50px)";
 section.style.transition = "all 1s ease";
 
 observer.observe(section);
-```
+
 
 });
 
@@ -186,7 +186,7 @@ observer.observe(section);
 
 document.addEventListener("DOMContentLoaded", () => {
 
-```
+
 const enterBtn = document.getElementById("enterBtn");
 const welcomeScreen = document.getElementById("welcomeScreen");
 const bgMusic = document.getElementById("bgMusic");
@@ -216,6 +216,6 @@ enterBtn.addEventListener("touchstart", (e) => {
     e.preventDefault();
     enterWebsite();
 });
-```
+
 
 });
