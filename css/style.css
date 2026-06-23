@@ -19,9 +19,7 @@ rgba(0,0,0,.55)
 ),
 url('../assets/hero-bg.png');
 
-background-size:contain;
-background-repeat:no-repeat;
-background-color:#2b0815;
+background-size:cover;
 background-position:center;
 
 display:flex;
@@ -58,8 +56,6 @@ padding:18px 40px;
 font-size:22px;
 border-radius:50px;
 cursor:pointer;
-touch-action:manipulation;
--webkit-tap-highlight-color:transparent;
 font-family:'Cinzel',serif;
 }
 
@@ -170,17 +166,26 @@ HERO
 ========================================= */
 
 .hero{
-background-image:
+position:relative;
+min-height:100vh;
+
+background:
 linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.35)
+rgba(0,0,0,.20),
+rgba(0,0,0,.20)
 ),
 url('../assets/hero-bg.png');
 
 background-size:cover;
-background-position:center center;
-min-height:100vh;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
+
 .hero-overlay{
 position:absolute;
 inset:0;
@@ -212,8 +217,14 @@ margin-bottom:15px;
 }
 
 .hero-name{
-font-size:110px;
+font-size:120px;
 line-height:1;
+font-weight:700;
+color:#e5c04a;
+
+text-shadow:
+0 0 10px rgba(212,175,55,.6),
+0 0 30px rgba(212,175,55,.3);
 }
 
 .heart-divider{
@@ -415,62 +426,58 @@ EVENTS
 ========================================= */
 
 .events{
-padding:80px 40px;
-background:#7a001f;
+
+background:#65061d;
+
+padding:100px 60px;
+
 text-align:center;
 }
 
 .events h2{
-font-size:70px;
-font-weight:700;
-color:#d4af37;
+
+font-size:60px;
+color:#f0d06b;
+
 margin-bottom:50px;
-letter-spacing:2px;
 }
 
 .event-grid{
+
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:25px;
-max-width:1400px;
-margin:auto;
+
+gap:30px;
 }
 
 .event-card{
-background:#8b0327;
+
+background:#850b2b;
+
+padding:25px;
+
 border:2px solid #d4af37;
-border-radius:22px;
 
-padding:35px 20px;
-
-min-height:180px;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
-box-shadow:
-0 0 20px rgba(212,175,55,.08);
+border-radius:16px;
 }
 
 .event-card h3{
-font-size:32px;
-font-weight:700;
-color:#d4af37;
-margin-bottom:25px;
-text-transform:uppercase;
+
+font-size:26px;
+
+color:#f0d06b;
+
+margin-bottom:20px;
 }
 
 .event-card p{
-font-size:22px;
-font-weight:600;
-line-height:1.8;
-color:white;
+
+font-size:18px;
+line-height:1.7;
 }
 
 .highlight{
-transform:scale(1.03);
+transform:scale(1.05);
 }
 
 /* =========================================
@@ -735,10 +742,7 @@ rgba(0,0,0,.35)
 url('../assets/hero-bg.png');
 
 background-size:cover;
-
-/* show more of the bride */
-background-position:25% center;
-
+background-position:50% center;
 min-height:100vh;
 }
 
@@ -755,10 +759,9 @@ letter-spacing:2px;
 }
 
 .hero-name{
-font-size:70px;
-line-height:1;
+font-size:42px;
 }
-  
+
 .heart-divider{
 font-size:28px;
 }
@@ -864,20 +867,19 @@ font-size:34px;
 
 .event-grid{
 grid-template-columns:1fr;
-gap:18px;
+gap:15px;
 }
 
 .event-card{
-min-height:140px;
-padding:25px 15px;
+padding:20px;
 }
 
 .event-card h3{
-font-size:26px;
+font-size:22px;
 }
 
 .event-card p{
-font-size:18px;
+font-size:16px;
 }
 
 .highlight{
@@ -932,62 +934,6 @@ font-size:34px;
 
 footer p{
 font-size:16px;
-}
-
-}
-/* =========================================
-MOBILE HERO FIX
-========================================= */
-
-@media (max-width:768px){
-
-.hero{
-background-position:35% center !important;
-display:flex !important;
-justify-content:center !important;
-align-items:center !important;
-}
-
-.hero-content{
-width:100% !important;
-max-width:100% !important;
-
-text-align:center !important;
-
-display:flex !important;
-flex-direction:column !important;
-align-items:center !important;
-justify-content:center !important;
-
-padding-left:20px !important;
-padding-right:20px !important;
-}
-
-.family-line,
-.hero-name,
-.invite-line,
-.forever,
-.hero-date,
-.countdown-title{
-text-align:center !important;
-}
-
-.hero-name{
-font-size:58px !important;
-}
-
-.forever{
-font-size:54px !important;
-}
-
-.hero-date{
-font-size:30px !important;
-}
-
-.countdown-panel{
-margin:20px auto 0 !important;
-max-width:360px !important;
-justify-content:center !important;
 }
 
 }
