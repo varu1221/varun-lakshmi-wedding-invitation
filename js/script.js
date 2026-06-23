@@ -169,7 +169,7 @@ petal.remove();
 
 }
 
-setInterval(createPetal, 500);
+setInterval(createPetal,1200);
 
 // ==============================
 // MUSIC TOGGLE
