@@ -339,14 +339,12 @@ if (!enterBtn || !welcomeScreen) return;
 enterBtn.addEventListener("click", function () {
 
     if (bgMusic) {
-        bgMusic.volume = 0.5;
-        bgMusic.play().catch(err => {
-            console.log("Music blocked:", err);
-        });
+        bgMusic.play().catch(() => {});
     }
 
-    welcomeScreen.style.display = "none";
+    welcomeScreen.style.opacity = "0";
+    welcomeScreen.style.visibility = "hidden";
+    welcomeScreen.style.pointerEvents = "none";
 
 });
-
 });
