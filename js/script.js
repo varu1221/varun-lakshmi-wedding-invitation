@@ -6,7 +6,6 @@ const weddingDate = new Date("2026-07-05T08:00:00").getTime();
 
 function updateCountdown() {
 
-```
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
