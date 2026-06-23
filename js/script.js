@@ -1,105 +1,97 @@
-// ==============================
-// COUNTDOWN TIMER
-// ==============================
+// ======================================
+// WEDDING COUNTDOWN
+// ======================================
 
 const weddingDate = new Date("July 05, 2026 08:00:00").getTime();
 
-const countdown = setInterval(function () {
+function updateCountdown() {
 
+```
 const now = new Date().getTime();
-
 const distance = weddingDate - now;
 
-const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+if(distance < 0){
+
+    document.getElementById("days").innerHTML = "00";
+    document.getElementById("hours").innerHTML = "00";
+    document.getElementById("minutes").innerHTML = "00";
+    document.getElementById("seconds").innerHTML = "00";
+
+    return;
+}
+
+const days = Math.floor(
+    distance / (1000 * 60 * 60 * 24)
+);
 
 const hours = Math.floor(
-(distance % (1000 * 60 * 60 * 24))
-/
-(1000 * 60 * 60)
+    (distance % (1000 * 60 * 60 * 24))
+    / (1000 * 60 * 60)
 );
 
 const minutes = Math.floor(
-(distance % (1000 * 60 * 60))
-/
-(1000 * 60)
+    (distance % (1000 * 60 * 60))
+    / (1000 * 60)
 );
 
 const seconds = Math.floor(
-(distance % (1000 * 60))
-/
-1000
+    (distance % (1000 * 60))
+    / 1000
 );
 
-const countdownElement =
-document.getElementById("countdown");
+document.getElementById("days").innerHTML =
+    String(days).padStart(2,"0");
 
-if (countdownElement) {
+document.getElementById("hours").innerHTML =
+    String(hours).padStart(2,"0");
 
-countdownElement.innerHTML = `
+document.getElementById("minutes").innerHTML =
+    String(minutes).padStart(2,"0");
 
-<div class="countdown-grid">
-
-<div class="count-box">
-<span>${days}</span>
-<p>Days</p>
-</div>
-
-<div class="count-box">
-<span>${hours}</span>
-<p>Hours</p>
-</div>
-
-<div class="count-box">
-<span>${minutes}</span>
-<p>Minutes</p>
-</div>
-
-<div class="count-box">
-<span>${seconds}</span>
-<p>Seconds</p>
-</div>
-
-</div>
-
-`;
+document.getElementById("seconds").innerHTML =
+    String(seconds).padStart(2,"0");
+```
 
 }
 
-if (distance < 0) {
+updateCountdown();
 
-clearInterval(countdown);
+setInterval(updateCountdown,1000);
 
-countdownElement.innerHTML =
-"<h2>💍 Wedding Day Has Arrived 💍</h2>";
-
-}
-
-}, 1000);
-
-// ==============================
+// ======================================
 // SMOOTH SCROLL
-// ==============================
+// ======================================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-anchor.addEventListener("click", function (e) {
+```
+anchor.addEventListener("click", function(e){
 
-e.preventDefault();
+    e.preventDefault();
 
-document.querySelector(this.getAttribute("href"))
-.scrollIntoView({
-behavior: "smooth"
+    const target =
+    document.querySelector(
+        this.getAttribute("href")
+    );
+
+    if(target){
+
+        target.scrollIntoView({
+            behavior:"smooth"
+        });
+
+    }
+
+});
+```
+
 });
 
-});
-
-});
-
-// ==============================
+// ======================================
 // GALLERY LIGHTBOX
-// ==============================
+// ======================================
 
-const images =
+const galleryImages =
 document.querySelectorAll(".gallery-grid img");
 
 const lightbox =
@@ -109,52 +101,58 @@ lightbox.id = "lightbox";
 
 document.body.appendChild(lightbox);
 
-images.forEach(image => {
+galleryImages.forEach(image => {
 
+```
 image.addEventListener("click", () => {
 
-lightbox.classList.add("active");
+    lightbox.classList.add("active");
 
-const img =
-document.createElement("img");
+    const img =
+    document.createElement("img");
 
-img.src = image.src;
+    img.src = image.src;
 
-while (lightbox.firstChild) {
-lightbox.removeChild(lightbox.firstChild);
-}
+    while(lightbox.firstChild){
+        lightbox.removeChild(
+            lightbox.firstChild
+        );
+    }
 
-lightbox.appendChild(img);
+    lightbox.appendChild(img);
+
+});
+```
 
 });
 
-});
+lightbox.addEventListener("click", () => {
 
-lightbox.addEventListener("click", e => {
-
-if (e.target !== e.currentTarget) return;
-
+```
 lightbox.classList.remove("active");
+```
 
 });
 
-// ==============================
-// FLOWER PETAL EFFECT
-// ==============================
+// ======================================
+// FLOWER PETALS
+// ======================================
 
-function createPetal() {
+function createPetal(){
 
+```
 const petal =
 document.createElement("div");
 
-petal.innerHTML = "🌸";
 petal.classList.add("petal");
+
+petal.innerHTML = "🌸";
 
 petal.style.left =
 Math.random() * window.innerWidth + "px";
 
 petal.style.animationDuration =
-Math.random() * 5 + 5 + "s";
+(Math.random() * 5 + 5) + "s";
 
 petal.style.opacity =
 Math.random();
@@ -163,44 +161,50 @@ document.body.appendChild(petal);
 
 setTimeout(() => {
 
-petal.remove();
+    petal.remove();
 
-}, 10000);
+},10000);
+```
 
 }
 
 setInterval(createPetal,1200);
 
-// ==============================
-// MUSIC TOGGLE
-// ==============================
+// ======================================
+// MUSIC BUTTON
+// ======================================
 
 const musicButton =
 document.getElementById("musicToggle");
 
-const music =
+const bgMusic =
 document.getElementById("bgMusic");
 
-if (musicButton && music) {
+if(musicButton && bgMusic){
 
-musicButton.addEventListener("click", () => {
-
-if (music.paused) {
-
-music.play();
-
+```
 musicButton.innerHTML =
 "🎵 Music On";
 
-} else {
+musicButton.addEventListener("click", () => {
 
-music.pause();
+    if(bgMusic.paused){
 
-musicButton.innerHTML =
-"🎵 Music Off";
+        bgMusic.play();
 
-}
+        musicButton.innerHTML =
+        "🎵 Music Off";
+
+    }else{
+
+        bgMusic.pause();
+
+        musicButton.innerHTML =
+        "🎵 Music On";
+
+    }
 
 });
+```
 
 }
