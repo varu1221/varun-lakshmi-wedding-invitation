@@ -832,8 +832,8 @@ rgba(0,0,0,.35)
 ),
 url('../assets/hero-mobile.png');
 
-background-size:cover;
-background-position:58% center;
+background-size:115%;
+background-position:center center;
 background-repeat:no-repeat;
 
 min-height:100vh;
