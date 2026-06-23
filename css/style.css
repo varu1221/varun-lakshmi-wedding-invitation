@@ -6,6 +6,7 @@ POSTER STYLE
 /* WELCOME SCREEN */
 
 #welcomeScreen{
+transition:.5s ease;
 position:fixed;
 top:0;
 left:0;
