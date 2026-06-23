@@ -338,13 +338,9 @@ if (!enterBtn || !welcomeScreen) return;
 
 enterBtn.addEventListener("click", function () {
 
-    if (bgMusic) {
-        bgMusic.play().catch(() => {});
-    }
+    alert("clicked");
 
-    welcomeScreen.style.opacity = "0";
-    welcomeScreen.style.visibility = "hidden";
-    welcomeScreen.style.pointerEvents = "none";
+    welcomeScreen.remove();
 
 });
-});
+
