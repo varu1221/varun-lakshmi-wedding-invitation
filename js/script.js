@@ -356,3 +356,26 @@ welcomeScreen.style.display = "none";
 });
 
 }
+document.addEventListener("DOMContentLoaded", function () {
+
+    const enterBtn = document.getElementById("enterBtn");
+    const welcomeScreen = document.getElementById("welcomeScreen");
+    const bgMusic = document.getElementById("bgMusic");
+
+    if (enterBtn) {
+
+        enterBtn.addEventListener("click", function () {
+
+            if (bgMusic) {
+                bgMusic.play().catch(err => console.log(err));
+            }
+
+            if (welcomeScreen) {
+                welcomeScreen.style.display = "none";
+            }
+
+        });
+
+    }
+
+});
