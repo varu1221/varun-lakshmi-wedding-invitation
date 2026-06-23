@@ -341,8 +341,9 @@ document.getElementById("bgMusic");
 
 if(enterBtn){
 
-enterBtn.addEventListener("click", () => {
-
+enterBtn.addEventListener("click", function () {
+    alert("Button Working");
+    
 bgMusic.play().catch(()=>{});
 
 welcomeScreen.style.display = "none";
