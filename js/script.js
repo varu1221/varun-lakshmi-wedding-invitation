@@ -328,55 +328,27 @@ section.style.transition =
 observer.observe(section);
 
 });
-// WELCOME SCREEN + MUSIC
-
-const enterBtn =
-document.getElementById("enterBtn");
-
-const welcomeScreen =
-document.getElementById("welcomeScreen");
-
-const bgMusic =
-document.getElementById("bgMusic");
-
-if(enterBtn){
-
-enterBtn.addEventListener("click", function () {
-    alert("Button Working");
-    
-bgMusic.play().catch(()=>{});
-
-welcomeScreen.style.display = "none";
-
-setTimeout(() => {
-
-welcomeScreen.style.display = "none";
-
-},500);
-
-});
-
-}
 document.addEventListener("DOMContentLoaded", function () {
 
-    const enterBtn = document.getElementById("enterBtn");
-    const welcomeScreen = document.getElementById("welcomeScreen");
-    const bgMusic = document.getElementById("bgMusic");
+```
+const enterBtn = document.getElementById("enterBtn");
+const welcomeScreen = document.getElementById("welcomeScreen");
+const bgMusic = document.getElementById("bgMusic");
 
-    if (enterBtn) {
+if (!enterBtn || !welcomeScreen) return;
 
-        enterBtn.addEventListener("click", function () {
+enterBtn.addEventListener("click", function () {
 
-            if (bgMusic) {
-                bgMusic.play().catch(err => console.log(err));
-            }
-
-            if (welcomeScreen) {
-                welcomeScreen.style.display = "none";
-            }
-
+    if (bgMusic) {
+        bgMusic.volume = 0.5;
+        bgMusic.play().catch(err => {
+            console.log("Music blocked:", err);
         });
-
     }
+
+    welcomeScreen.style.display = "none";
+
+});
+```
 
 });
