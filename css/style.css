@@ -650,6 +650,10 @@ flex-wrap:wrap;
 
 @media(max-width:768px){
 
+#musicToggle{
+display:none;
+}
+}
 
 .hero{
 background-image:
