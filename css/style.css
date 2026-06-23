@@ -170,26 +170,20 @@ HERO
 ========================================= */
 
 .hero{
-position:relative;
-min-height:100vh;
-
-background:
+background-image:
 linear-gradient(
-rgba(0,0,0,.20),
-rgba(0,0,0,.20)
+rgba(0,0,0,.35),
+rgba(0,0,0,.35)
 ),
 url('../assets/hero-bg.png');
 
 background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
 
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
+/* Move image further left */
+background-position:30% center;
+
+min-height:100vh;
 }
-
 .hero-overlay{
 position:absolute;
 inset:0;
