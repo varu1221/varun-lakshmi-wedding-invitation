@@ -653,7 +653,8 @@ flex-wrap:wrap;
 #musicToggle{
 display:none;
 }
-}
+
+/* HERO */
 
 .hero{
 background-image:
@@ -664,47 +665,8 @@ rgba(0,0,0,.35)
 url('../assets/hero-bg.png');
 
 background-size:cover;
-
-/* Move image slightly left */
 background-position:38% center;
-
 min-height:100vh;
-}
-
-}
-
-
-/* NAVBAR */
-
-.navbar{
-height:65px;
-padding:0 12px;
-}
-
-.nav-left img{
-height:45px;
-}
-
-.nav-links{
-display:none;
-}
-
-.logo img{
-height:38px;
-}
-
-.navbar ul{
-display:none;
-}
-
-}
-
-/* HERO */
-
-.hero{
-min-height:100vh;
-background-position:center center;
-background-size:cover;
 }
 
 .hero-content{
@@ -740,6 +702,20 @@ font-size:42px;
 font-size:24px;
 letter-spacing:2px;
 }
+
+/* NAVBAR */
+
+.navbar{
+height:65px;
+padding:0 12px;
+}
+
+.logo img{
+height:38px;
+}
+
+.navbar ul{
+display:none;
 }
 
 /* COUNTDOWN */
@@ -762,7 +738,6 @@ font-size:20px;
 .count-box small{
 font-size:10px;
 }
-}
 
 /* PARENTS */
 
@@ -772,17 +747,12 @@ gap:20px;
 padding:25px 10px;
 }
 
-.parent-center img{
-height:55px;
-}
-
 .parent-box h3{
 font-size:22px;
 }
 
 .parent-box p{
 font-size:18px;
-}
 }
 
 /* STORY */
@@ -806,7 +776,6 @@ text-align:center;
 font-size:18px;
 text-align:center;
 line-height:1.8;
-}
 }
 
 /* EVENTS */
@@ -839,7 +808,6 @@ font-size:16px;
 .highlight{
 transform:none;
 }
-}
 
 /* GALLERY */
 
@@ -858,7 +826,6 @@ grid-template-columns:1fr;
 .gallery-grid img{
 height:240px;
 }
-}
 
 /* VENUE */
 
@@ -876,7 +843,6 @@ font-size:24px;
 
 .venue p{
 font-size:18px;
-}
 }
 
 /* FOOTER */
