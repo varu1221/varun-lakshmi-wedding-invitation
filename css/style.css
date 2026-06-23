@@ -737,7 +737,7 @@ display:none;
 /* HERO */
 
 .hero{
-background-image:
+background:
 linear-gradient(
 rgba(0,0,0,.35),
 rgba(0,0,0,.35)
@@ -745,8 +745,17 @@ rgba(0,0,0,.35)
 url('../assets/hero-bg.png');
 
 background-size:cover;
+
+/* Adjust until bride and temple both visible */
 background-position:40% center;
+
+background-repeat:no-repeat;
+
 min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .hero-content{
@@ -756,10 +765,7 @@ max-width:100%;
 
 margin:0 auto;
 
-padding-top:100px;
-padding-bottom:40px;
-padding-left:20px;
-padding-right:20px;
+padding:100px 20px 40px;
 
 display:flex;
 flex-direction:column;
@@ -770,23 +776,27 @@ text-align:center;
 }
 
 .family-line{
-font-size:12px;
+font-size:14px;
 letter-spacing:2px;
+text-align:center;
 }
 
 .hero-name{
 font-size:58px;
 font-weight:700;
+line-height:1;
 text-align:center;
 }
 
 .heart-divider{
-font-size:28px;
+font-size:30px;
+margin:10px 0;
 }
 
 .invite-line{
-font-size:14px;
+font-size:16px;
 line-height:1.5;
+text-align:center;
 }
 
 .forever{
@@ -807,10 +817,6 @@ height:65px;
 padding:0 12px;
 }
 
-.logo img{
-height:38px;
-}
-
 .navbar ul{
 display:none;
 }
@@ -819,10 +825,11 @@ display:none;
 
 .countdown-panel{
 
-margin:20px auto 0;
-
+display:flex;
 justify-content:center;
 align-items:center;
+
+margin:20px auto 0;
 
 padding:12px;
 gap:8px;
