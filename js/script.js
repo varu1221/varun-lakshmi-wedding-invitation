@@ -90,8 +90,12 @@ image.addEventListener("click", () => {
 
 lightbox.classList.add("active");
 
-lightbox.innerHTML =
-`<img src="${image.src}" alt="">`;
+image.addEventListener("click", () => {
+
+    lightbox.classList.add("active");
+
+    lightbox.innerHTML =
+    `<img src="${image.src}" alt="">`;
 
 });
 
