@@ -213,6 +213,7 @@ font-size:56px;
 font-weight:700;
 line-height:1;
 text-align:center;
+color:#d4af37;
 }
 
 .heart-divider{
@@ -230,12 +231,14 @@ text-align:center;
 font-size:52px;
 line-height:1.1;
 text-align:center;
+color:#d4af37;
 }
 
 .hero-date{
 font-size:28px;
 letter-spacing:3px;
 text-align:center;
+color:#d4af37;
 }
 
 /* COUNTDOWN */
