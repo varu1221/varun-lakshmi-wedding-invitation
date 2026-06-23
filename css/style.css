@@ -20,7 +20,7 @@ rgba(0,0,0,.55)
 url('../assets/hero-bg.png');
 
 background-size:cover;
-background-position:center;
+background-position:65% center;
 
 display:flex;
 flex-direction:column;
