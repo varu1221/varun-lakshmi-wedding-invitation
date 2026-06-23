@@ -156,10 +156,17 @@ margin-bottom:25px;
 }
 
 .hero-right h1{
-font-size:clamp(70px,9vw,140px);
-line-height:1.05;
-letter-spacing:3px;
+font-size:clamp(60px,7vw,110px);
+line-height:1;
+letter-spacing:2px;
 color:#d4af37;
+text-shadow:
+0 0 15px rgba(212,175,55,.35),
+0 0 30px rgba(212,175,55,.15);
+}
+.hero-right{
+max-width:1200px;
+margin:auto;
 }
 
 .hero-right h1{
@@ -169,20 +176,19 @@ text-shadow:
 }
 
 .ampersand{
-font-size:65px;
-color:white;
-margin:10px 0;
+font-size:70px;
+margin:15px 0;
 }
 
 .invite-line{
-color:white;
-font-size:24px;
-margin-top:25px;
+font-size:20px;
+max-width:900px;
+line-height:1.6;
 }
 
 .forever{
 font-family:'Great Vibes',cursive;
-font-size:60px;
+font-size:clamp(50px,5vw,80px);
 color:#d4af37;
 margin-top:20px;
 font-weight:400;
