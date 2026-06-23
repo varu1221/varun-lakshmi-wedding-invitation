@@ -330,17 +330,34 @@ observer.observe(section);
 });
 document.addEventListener("DOMContentLoaded", function () {
 
-const enterBtn = document.getElementById("enterBtn");
-const welcomeScreen = document.getElementById("welcomeScreen");
-const bgMusic = document.getElementById("bgMusic");
+    const enterBtn = document.getElementById("enterBtn");
+    const welcomeScreen = document.getElementById("welcomeScreen");
+    const bgMusic = document.getElementById("bgMusic");
 
-if (!enterBtn || !welcomeScreen) return;
+    function enterWebsite() {
 
-enterBtn.addEventListener("click", function () {
+        if (bgMusic) {
+            bgMusic.play().catch(() => {});
+        }
 
-    alert("clicked");
+        welcomeScreen.style.opacity = "0";
+        welcomeScreen.style.visibility = "hidden";
+        welcomeScreen.style.pointerEvents = "none";
 
-    welcomeScreen.remove();
+        setTimeout(() => {
+            welcomeScreen.remove();
+        }, 500);
+    }
+
+    if (enterBtn) {
+
+        enterBtn.addEventListener("click", enterWebsite);
+
+        enterBtn.addEventListener("touchstart", function(e){
+            e.preventDefault();
+            enterWebsite();
+        });
+
+    }
 
 });
-
