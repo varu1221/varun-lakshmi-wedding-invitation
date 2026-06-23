@@ -217,27 +217,30 @@ let entered = false;
 
 function enterWebsite() {
 
-    if (entered) return;
-    entered = true;
+    const bgMusic =
+    document.getElementById("bgMusic");
 
-    if (bgMusic) {
+    if(bgMusic){
+
+        bgMusic.muted = false;
         bgMusic.volume = 0.5;
 
-        bgMusic.play().catch(err => {
-            console.log("Music blocked:", err);
+        bgMusic.play()
+        .then(() => {
+            console.log("Music playing");
+        })
+        .catch(err => {
+            console.log(err);
         });
     }
 
     welcomeScreen.style.opacity = "0";
-    welcomeScreen.style.visibility = "hidden";
-    welcomeScreen.style.pointerEvents = "none";
 
     setTimeout(() => {
         welcomeScreen.remove();
-    }, 500);
+    },500);
 
 }
-
 enterBtn.addEventListener("click", enterWebsite);
 
 enterBtn.addEventListener("touchstart", (e) => {
