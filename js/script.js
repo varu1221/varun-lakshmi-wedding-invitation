@@ -69,36 +69,42 @@ link.addEventListener("click", function (e) {
 // GALLERY LIGHTBOX
 // =====================================
 
-const galleryImages = document.querySelectorAll(".gallery-grid img");
+// =====================================
+// GALLERY LIGHTBOX
+// =====================================
 
-if (galleryImages.length > 0) {
+const galleryImages =
+document.querySelectorAll(".gallery-grid img");
 
-```
-const lightbox = document.createElement("div");
+if(galleryImages.length > 0){
+
+const lightbox =
+document.createElement("div");
+
 lightbox.id = "lightbox";
 
 document.body.appendChild(lightbox);
 
 galleryImages.forEach(image => {
 
-    image.addEventListener("click", () => {
+image.addEventListener("click", () => {
 
-        lightbox.classList.add("active");
+lightbox.classList.add("active");
 
-        lightbox.innerHTML =
-            `<img src="${image.src}" alt="">`;
+lightbox.innerHTML =
+`<img src="${image.src}" alt="">`;
 
-    });
+});
 
 });
 
 lightbox.addEventListener("click", () => {
-    lightbox.classList.remove("active");
+
+lightbox.classList.remove("active");
+
 });
-```
 
 }
-
 // =====================================
 // FLOWER PETALS
 // =====================================
