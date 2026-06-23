@@ -377,16 +377,16 @@ gap:30px;
 
 background:#850b2b;
 
-padding:40px;
+padding:25px;
 
 border:2px solid #d4af37;
 
-border-radius:20px;
+border-radius:16px;
 }
 
 .event-card h3{
 
-font-size:34px;
+font-size:26px;
 
 color:#f0d06b;
 
@@ -395,7 +395,7 @@ margin-bottom:20px;
 
 .event-card p{
 
-font-size:24px;
+font-size:18px;
 line-height:1.7;
 }
 
