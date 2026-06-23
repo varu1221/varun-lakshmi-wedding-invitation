@@ -971,3 +971,30 @@ font-size:16px;
 }
 
 }
+
+@media(max-width:768px){
+
+.hero-content,
+.hero-content *{
+text-align:center !important;
+}
+
+.hero-content{
+display:flex !important;
+flex-direction:column !important;
+align-items:center !important;
+justify-content:center !important;
+width:100% !important;
+margin:0 auto !important;
+}
+
+.countdown-panel{
+margin:20px auto !important;
+justify-content:center !important;
+}
+
+.hero{
+background-position:40% center !important;
+}
+
+}
