@@ -328,3 +328,31 @@ section.style.transition =
 observer.observe(section);
 
 });
+// WELCOME SCREEN + MUSIC
+
+const enterBtn =
+document.getElementById("enterBtn");
+
+const welcomeScreen =
+document.getElementById("welcomeScreen");
+
+const bgMusic =
+document.getElementById("bgMusic");
+
+if(enterBtn){
+
+enterBtn.addEventListener("click", () => {
+
+bgMusic.play().catch(()=>{});
+
+welcomeScreen.style.opacity = "0";
+
+setTimeout(() => {
+
+welcomeScreen.style.display = "none";
+
+},500);
+
+});
+
+}
