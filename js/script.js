@@ -345,7 +345,7 @@ enterBtn.addEventListener("click", () => {
 
 bgMusic.play().catch(()=>{});
 
-welcomeScreen.style.opacity = "0";
+welcomeScreen.style.display = "none";
 
 setTimeout(() => {
 
