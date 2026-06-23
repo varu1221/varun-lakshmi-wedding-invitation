@@ -196,6 +196,9 @@ background:rgba(0,0,0,.10);
 position:relative;
 z-index:5;
 max-width:1100px;
+width:100%;
+margin:0 auto;
+text-align:center;
 padding-top:120px;
 padding-bottom:80px;
 padding-left:20px;
@@ -742,15 +745,28 @@ rgba(0,0,0,.35)
 url('../assets/hero-bg.png');
 
 background-size:cover;
-background-position:50% center;
+background-position:40% center;
 min-height:100vh;
 }
 
 .hero-content{
+
+width:100%;
+max-width:100%;
+
+margin:0 auto;
+
 padding-top:100px;
 padding-bottom:40px;
-padding-left:15px;
-padding-right:15px;
+padding-left:20px;
+padding-right:20px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
 }
 
 .family-line{
@@ -759,7 +775,9 @@ letter-spacing:2px;
 }
 
 .hero-name{
-font-size:42px;
+font-size:58px;
+font-weight:700;
+text-align:center;
 }
 
 .heart-divider{
@@ -772,12 +790,14 @@ line-height:1.5;
 }
 
 .forever{
-font-size:42px;
+font-size:54px;
+text-align:center;
 }
 
 .hero-date{
-font-size:24px;
-letter-spacing:2px;
+font-size:30px;
+letter-spacing:3px;
+text-align:center;
 }
 
 /* NAVBAR */
@@ -798,9 +818,16 @@ display:none;
 /* COUNTDOWN */
 
 .countdown-panel{
+
+margin:20px auto 0;
+
+justify-content:center;
+align-items:center;
+
 padding:12px;
-gap:10px;
-flex-wrap:wrap;
+gap:8px;
+
+flex-wrap:nowrap;
 }
 
 .count-box{
