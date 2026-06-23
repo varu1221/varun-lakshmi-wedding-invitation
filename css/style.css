@@ -9,14 +9,18 @@ padding:0;
 box-sizing:border-box;
 }
 
-html{
+html,
+body{
+width:100%;
+margin:0;
+padding:0;
+overflow-x:hidden;
 scroll-behavior:smooth;
 }
 
 body{
 font-family:'Cinzel',serif;
 background:#f8f1e4;
-overflow-x:hidden;
 color:#fff;
 }
 
@@ -217,8 +221,8 @@ box-shadow:
 
 .count-box{
 
-width:150px;
-height:150px;
+width:120px;
+height:120px;
 
 display:flex;
 flex-direction:column;
@@ -232,14 +236,14 @@ background:#8a0b2c;
 }
 
 .count-box span{
-font-size:48px;
+font-size:34px;
 font-weight:700;
 color:#f0d06b;
 }
 
 .count-box small{
 margin-top:10px;
-font-size:18px;
+font-size:14px;
 color:white;
 }
 
@@ -275,12 +279,14 @@ margin-bottom:10px;
 
 .parent-box h3{
 font-size:34px;
+font-weight:700;
 color:white;
 margin-bottom:10px;
 }
 
 .parent-box p{
 font-size:26px;
+font-weight:600;
 color:white;
 }
 
@@ -643,6 +649,34 @@ flex-wrap:wrap;
 }
 
 @media(max-width:768px){
+.hero{
+min-height:100vh;
+background-size:cover;
+background-position:center center;
+}
+
+.hero-content{
+width:100%;
+padding-left:15px;
+padding-right:15px;
+}
+
+.story-section{
+width:100%;
+padding:60px 15px;
+}
+
+.gallery{
+padding:60px 15px;
+}
+
+.events{
+padding:60px 15px;
+}
+
+.venue{
+padding:60px 15px;
+}
 
 .nav-links{
 display:none;
