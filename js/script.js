@@ -328,6 +328,11 @@ section.style.transition =
 observer.observe(section);
 
 });
+
+#enterBtn{
+cursor:pointer;
+touch-action:manipulation;
+}
 document.addEventListener("DOMContentLoaded", function () {
 
     const enterBtn = document.getElementById("enterBtn");
