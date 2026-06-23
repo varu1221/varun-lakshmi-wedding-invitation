@@ -178,10 +178,7 @@ rgba(0,0,0,.35)
 url('../assets/hero-bg.png');
 
 background-size:cover;
-
-/* Move image further left */
-background-position:50% center;
-
+background-position:center center;
 min-height:100vh;
 }
 .hero-overlay{
@@ -215,14 +212,8 @@ margin-bottom:15px;
 }
 
 .hero-name{
-font-size:120px;
+font-size:110px;
 line-height:1;
-font-weight:700;
-color:#e5c04a;
-
-text-shadow:
-0 0 10px rgba(212,175,55,.6),
-0 0 30px rgba(212,175,55,.3);
 }
 
 .heart-divider{
@@ -744,7 +735,10 @@ rgba(0,0,0,.35)
 url('../assets/hero-bg.png');
 
 background-size:cover;
-background-position:65% center;
+
+/* show more of the bride */
+background-position:25% center;
+
 min-height:100vh;
 }
 
@@ -761,9 +755,10 @@ letter-spacing:2px;
 }
 
 .hero-name{
-font-size:42px;
+font-size:70px;
+line-height:1;
 }
-
+  
 .heart-divider{
 font-size:28px;
 }
