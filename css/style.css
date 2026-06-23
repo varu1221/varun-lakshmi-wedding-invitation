@@ -428,58 +428,62 @@ EVENTS
 ========================================= */
 
 .events{
-
-background:#65061d;
-
-padding:100px 60px;
-
+padding:80px 40px;
+background:#7a001f;
 text-align:center;
 }
 
 .events h2{
-
-font-size:60px;
-color:#f0d06b;
-
+font-size:70px;
+font-weight:700;
+color:#d4af37;
 margin-bottom:50px;
+letter-spacing:2px;
 }
 
 .event-grid{
-
 display:grid;
 grid-template-columns:repeat(3,1fr);
-
-gap:30px;
+gap:25px;
+max-width:1400px;
+margin:auto;
 }
 
 .event-card{
-
-background:#850b2b;
-
-padding:25px;
-
+background:#8b0327;
 border:2px solid #d4af37;
+border-radius:22px;
 
-border-radius:16px;
+padding:35px 20px;
+
+min-height:180px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+box-shadow:
+0 0 20px rgba(212,175,55,.08);
 }
 
 .event-card h3{
-
-font-size:26px;
-
-color:#f0d06b;
-
-margin-bottom:20px;
+font-size:32px;
+font-weight:700;
+color:#d4af37;
+margin-bottom:25px;
+text-transform:uppercase;
 }
 
 .event-card p{
-
-font-size:18px;
-line-height:1.7;
+font-size:22px;
+font-weight:600;
+line-height:1.8;
+color:white;
 }
 
 .highlight{
-transform:scale(1.05);
+transform:scale(1.03);
 }
 
 /* =========================================
@@ -869,19 +873,20 @@ font-size:34px;
 
 .event-grid{
 grid-template-columns:1fr;
-gap:15px;
+gap:18px;
 }
 
 .event-card{
-padding:20px;
+min-height:140px;
+padding:25px 15px;
 }
 
 .event-card h3{
-font-size:22px;
+font-size:26px;
 }
 
 .event-card p{
-font-size:16px;
+font-size:18px;
 }
 
 .highlight{
