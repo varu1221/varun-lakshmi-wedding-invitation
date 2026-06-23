@@ -193,19 +193,50 @@ setInterval(createPetal,1200);
 // MUSIC BUTTON
 // =====================================
 
-const musicButton =
-document.getElementById("musicToggle");
+// MUSIC
 
 const bgMusic =
 document.getElementById("bgMusic");
 
-musicButton.addEventListener("click", async () => {
+const musicButton =
+document.getElementById("musicToggle");
 
-try{
+// Start music on first tap anywhere
+document.addEventListener(
+"click",
+function startMusic(){
 
 if(bgMusic.paused){
 
-await bgMusic.play();
+bgMusic.play().catch(()=>{});
+
+if(musicButton){
+musicButton.innerHTML =
+"🎵 Music Off";
+}
+
+}
+
+document.removeEventListener(
+"click",
+startMusic
+);
+
+},
+{ once:true }
+);
+
+// Manual toggle button
+
+if(musicButton){
+
+musicButton.addEventListener(
+"click",
+function(){
+
+if(bgMusic.paused){
+
+bgMusic.play();
 
 musicButton.innerHTML =
 "🎵 Music Off";
@@ -219,14 +250,10 @@ musicButton.innerHTML =
 
 }
 
-}catch(error){
-
-console.log(error);
+}
+);
 
 }
-
-});
-
 // =====================================
 // NAVBAR SHRINK EFFECT
 // =====================================
