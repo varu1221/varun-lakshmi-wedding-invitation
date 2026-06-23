@@ -194,27 +194,18 @@ setInterval(createPetal,1200);
 // =====================================
 
 const musicButton =
-document.getElementById(
-"musicToggle"
-);
+document.getElementById("musicToggle");
 
 const bgMusic =
-document.getElementById(
-"bgMusic"
-);
+document.getElementById("bgMusic");
 
-if(musicButton && bgMusic){
+musicButton.addEventListener("click", async () => {
 
-musicButton.innerHTML =
-"🎵 Music On";
-
-musicButton.addEventListener(
-"click",
-() => {
+try{
 
 if(bgMusic.paused){
 
-bgMusic.play();
+await bgMusic.play();
 
 musicButton.innerHTML =
 "🎵 Music Off";
@@ -228,10 +219,13 @@ musicButton.innerHTML =
 
 }
 
-}
-);
+}catch(error){
+
+console.log(error);
 
 }
+
+});
 
 // =====================================
 // NAVBAR SHRINK EFFECT
