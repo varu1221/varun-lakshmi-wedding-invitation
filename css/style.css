@@ -56,6 +56,8 @@ padding:18px 40px;
 font-size:22px;
 border-radius:50px;
 cursor:pointer;
+touch-action:manipulation;
+-webkit-tap-highlight-color:transparent;
 font-family:'Cinzel',serif;
 }
 
