@@ -33,7 +33,7 @@ daysEl.textContent = String(days).padStart(2, "0");
 hoursEl.textContent = String(hours).padStart(2, "0");
 minutesEl.textContent = String(minutes).padStart(2, "0");
 secondsEl.textContent = String(seconds).padStart(2, "0");
-```
+
 
 }
 
@@ -46,7 +46,7 @@ setInterval(updateCountdown, 1000);
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-```
+
 link.addEventListener("click", function (e) {
 
     const target = document.querySelector(this.getAttribute("href"));
@@ -60,7 +60,7 @@ link.addEventListener("click", function (e) {
     }
 
 });
-```
+
 
 });
 
@@ -110,7 +110,7 @@ lightbox.classList.remove("active");
 
 function createPetal() {
 
-```
+
 const petal = document.createElement("div");
 
 petal.className = "petal";
@@ -130,7 +130,7 @@ document.body.appendChild(petal);
 setTimeout(() => {
     petal.remove();
 }, 10000);
-```
+
 
 }
 
@@ -142,7 +142,7 @@ setInterval(createPetal, 1200);
 
 window.addEventListener("scroll", () => {
 
-```
+
 const navbar = document.querySelector(".navbar");
 
 if (!navbar) return;
@@ -151,7 +151,7 @@ navbar.style.height =
     window.scrollY > 50
         ? "75px"
         : "90px";
-```
+
 
 });
 
@@ -163,7 +163,7 @@ const sections = document.querySelectorAll("section");
 
 if ("IntersectionObserver" in window) {
 
-```
+
 const observer = new IntersectionObserver(
 
     entries => {
@@ -196,7 +196,7 @@ sections.forEach(section => {
     observer.observe(section);
 
 });
-```
+
 
 }
 
@@ -206,7 +206,7 @@ sections.forEach(section => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-```
+
 const enterBtn = document.getElementById("enterBtn");
 const welcomeScreen = document.getElementById("welcomeScreen");
 const bgMusic = document.getElementById("bgMusic");
@@ -244,6 +244,6 @@ enterBtn.addEventListener("touchstart", (e) => {
     e.preventDefault();
     enterWebsite();
 });
-```
+
 
 });
