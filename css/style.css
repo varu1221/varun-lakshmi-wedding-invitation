@@ -180,7 +180,7 @@ url('../assets/hero-bg.png');
 background-size:cover;
 
 /* Move image further left */
-background-position:30% center;
+background-position:50% center;
 
 min-height:100vh;
 }
