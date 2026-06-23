@@ -824,28 +824,25 @@ display:none;
 
 /* HERO */
 
+@media(max-width:768px){
+
 .hero{
-background:
+background-image:
 linear-gradient(
 rgba(0,0,0,.35),
 rgba(0,0,0,.35)
 ),
-url('../assets/hero-bg.png');
+url('../assets/hero-mobile.png');
 
 background-size:cover;
 
-/* Adjust until bride and temple both visible */
-background-position:40% center;
+/* Shift image slightly right */
+background-position:58% center;
 
 background-repeat:no-repeat;
-
-min-height:100vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
 }
 
+}
 .hero-content{
 
 width:100%;
