@@ -622,7 +622,7 @@ RESPONSIVE
 @media(max-width:992px){
 
 .hero-name{
-font-size:80px;
+font-size:52px;
 }
 
 .story-section{
@@ -653,8 +653,8 @@ flex-wrap:wrap;
 /* NAVBAR */
 
 .navbar{
-height:70px;
-padding:0 15px;
+height:65px;
+padding:0 12px;
 }
 
 .nav-left img{
@@ -663,6 +663,16 @@ height:45px;
 
 .nav-links{
 display:none;
+}
+
+.logo img{
+height:38px;
+}
+
+.navbar ul{
+display:none;
+}
+
 }
 
 /* HERO */
@@ -710,18 +720,18 @@ letter-spacing:2px;
 /* COUNTDOWN */
 
 .countdown-panel{
-padding:15px;
+padding:12px;
 gap:10px;
 flex-wrap:wrap;
 }
 
 .count-box{
-width:75px;
-height:75px;
+width:70px;
+height:70px;
 }
 
 .count-box span{
-font-size:22px;
+font-size:20px;
 }
 
 .count-box small{
