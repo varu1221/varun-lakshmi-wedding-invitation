@@ -650,6 +650,26 @@ flex-wrap:wrap;
 
 @media(max-width:768px){
 
+
+.hero{
+background-image:
+linear-gradient(
+rgba(0,0,0,.35),
+rgba(0,0,0,.35)
+),
+url('../assets/hero-bg.png');
+
+background-size:cover;
+
+/* Move image slightly left */
+background-position:38% center;
+
+min-height:100vh;
+}
+
+}
+
+
 /* NAVBAR */
 
 .navbar{
