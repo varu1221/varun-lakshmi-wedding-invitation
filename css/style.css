@@ -168,19 +168,10 @@ HERO
 /* HERO MOBILE */
 
 .hero{
-
-background:
-linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.35)
-),
-url('../assets/hero-bg.png');
+background-image:url('../assets/hero-mobile.png');
 
 background-size:cover;
-
-/* Shows bride + groom + some temple */
-background-position:32% center;
-
+background-position:center center;
 background-repeat:no-repeat;
 
 min-height:100vh;
@@ -188,10 +179,7 @@ min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-
-text-align:center;
 }
-
 .hero-content{
 
 width:100%;
