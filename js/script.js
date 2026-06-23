@@ -348,6 +348,5 @@ enterBtn.addEventListener("click", function () {
     welcomeScreen.style.display = "none";
 
 });
-```
 
 });
