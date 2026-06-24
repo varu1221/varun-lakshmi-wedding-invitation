@@ -217,8 +217,8 @@ let entered = false;
 
 function enterWebsite() {
 
-    const bgMusic =
-    document.getElementById("bgMusic");
+    if (entered) return;
+    entered = true;
 
     if(bgMusic){
 
@@ -228,9 +228,15 @@ function enterWebsite() {
         bgMusic.play()
         .then(() => {
             console.log("Music playing");
+
+            if(musicToggle){
+                musicToggle.textContent =
+                "🔊 Music On";
+            }
+
         })
         .catch(err => {
-            console.log(err);
+            console.log("Music error:", err);
         });
     }
 
@@ -239,11 +245,10 @@ function enterWebsite() {
     setTimeout(() => {
         welcomeScreen.remove();
     },500);
-
 }
 enterBtn.addEventListener("click", enterWebsite);
 
-enterBtn.addEventListener("touchstart", (e) => {
+enterBtn.addEventListener("touchend", (e) => {
     e.preventDefault();
     enterWebsite();
 });
