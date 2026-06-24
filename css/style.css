@@ -826,6 +826,77 @@ flex-wrap:wrap;
 
 }
 
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:15px 30px;
+
+background:#25D366;
+
+color:white;
+
+font-size:18px;
+
+font-weight:600;
+
+text-decoration:none;
+
+border-radius:12px;
+
+transition:.3s ease;
+
+}
+
+.whatsapp-btn:hover{
+
+transform:translateY(-3px);
+
+opacity:.9;
+
+}
+
+/* CALENDAR BUTTON */
+
+.calendar-btn{
+
+display:inline-block;
+
+margin-top:20px;
+margin-left:10px;
+
+padding:15px 30px;
+
+background:#65061d;
+
+border:2px solid #d4af37;
+
+color:white;
+
+font-size:18px;
+
+font-weight:600;
+
+text-decoration:none;
+
+border-radius:12px;
+
+transition:.3s ease;
+
+}
+
+.calendar-btn:hover{
+
+transform:translateY(-3px);
+
+background:#7a001f;
+
+}
+
 @media (max-width:768px){
 
 #musicToggle{
@@ -1059,6 +1130,21 @@ font-size:24px;
 
 .venue p{
 font-size:18px;
+}
+
+/* SHARE BUTTON */
+
+.whatsapp-btn,
+.calendar-btn{
+
+display:block;
+
+width:100%;
+
+margin:10px auto;
+
+text-align:center;
+
 }
 
 /* FOOTER */
