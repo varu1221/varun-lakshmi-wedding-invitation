@@ -17,7 +17,7 @@ linear-gradient(
 rgba(0,0,0,.55),
 rgba(0,0,0,.55)
 ),
-url('../assets/hero-bg.png');
+url('../assets/hero-bg.webp');
 
 background-size:cover;
 background-position:center;
@@ -174,7 +174,7 @@ linear-gradient(
 rgba(0,0,0,.20),
 rgba(0,0,0,.20)
 ),
-url('../assets/hero-bg.png');
+url('../assets/hero-bg.webp');
 
 background-size:cover;
 background-position:center;
@@ -840,7 +840,7 @@ linear-gradient(
 rgba(0,0,0,.25),
 rgba(0,0,0,.25)
 ),
-url('../assets/hero-mobile.png');
+url('../assets/hero-mobile.webp');
 
 background-size:100%;
 background-position:center center;
@@ -1084,7 +1084,7 @@ linear-gradient(
 rgba(0,0,0,.35),
 rgba(0,0,0,.35)
 ),
-url('../assets/hero-mobile.png');
+url('../assets/hero-mobile.webp');
 
 background-size:cover;
 background-position:center center;
