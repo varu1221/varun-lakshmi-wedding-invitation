@@ -1,3 +1,6 @@
+const musicToggle =
+document.getElementById("musicToggle");
+
 // =====================================
 // WEDDING COUNTDOWN
 // =====================================
