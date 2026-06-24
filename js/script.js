@@ -248,5 +248,23 @@ enterBtn.addEventListener("touchstart", (e) => {
     enterWebsite();
 });
 
+musicToggle.addEventListener("click", () => {
 
+if(bgMusic.paused){
+
+bgMusic.play();
+
+musicToggle.textContent =
+"🔊 Music On";
+
+}else{
+
+bgMusic.pause();
+
+musicToggle.textContent =
+"🔇 Music Off";
+
+}
+
+});
 });
